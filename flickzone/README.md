@@ -273,3 +273,6 @@ STEP FOUR:
         How to access it:
                 flickzone -> src -> components -> jumbotron -> index.js
                                                                                                                              
+
+STEP FIVE: 
+	Building footer
