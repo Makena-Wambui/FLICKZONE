@@ -276,3 +276,8 @@ STEP FOUR:
 
 STEP FIVE: 
 	Building footer
+
+STEP SIX:
+	Building accordion and opt in bar
+
+
