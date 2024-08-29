@@ -281,3 +281,5 @@ STEP SIX:
 	Building accordion and opt in bar
 
 
+STEP SEVEN:
+	Building Header and Feature.
