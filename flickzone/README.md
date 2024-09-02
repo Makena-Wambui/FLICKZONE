@@ -283,3 +283,6 @@ STEP SIX:
 
 STEP SEVEN:
 	Building Header and Feature.
+
+STEP EIGHT:
+ 	Linking App to Firebase
