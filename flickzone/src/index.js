@@ -9,7 +9,6 @@ import { FirebaseContext } from './context/firebase';
 // Pass the firebase, db, or auth objects to your App or other components if necessary
 render(
   <>
-    // included auth
     <FirebaseContext.Provider value={{ app, auth }}>
       <GlobalStyles />
       <App />
