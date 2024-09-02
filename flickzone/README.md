@@ -286,3 +286,7 @@ STEP SEVEN:
 
 STEP EIGHT:
  	Linking App to Firebase
+
+STEP NINE:
+	Building the SignIn Page, Firebase authentication.
+
