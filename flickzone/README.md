@@ -312,9 +312,79 @@ Firebase primarily functions as a backend-as-a-service (BaaS). It provides vario
 
 7. **Analytics, Crashlytics, and Performance Monitoring**: These tools help you understand your users, track crashes, and monitor the performance of your app.
 
-### Frontend and Backend Roles
+Frontend and Backend Roles
 - **Frontend**: Your frontend code (React, Angular, etc.) interacts with Firebase services directly through Firebase SDKs. For example, in a React app, you can use Firebase's JavaScript SDK to authenticate users, read/write data to the Firestore database, and more.
   
 - **Backend**: Firebase handles all the server-side work for you. This includes database management, user authentication, serverless functions, file storage, etc. With Firebase, you often don't need to write traditional backend code or manage servers.
 
 In summary, Firebase allows you to focus more on building the frontend of your application while it takes care of the backend services.
+
+
+The purpose and functionality of the custom hook `useAuthListener` to help clarify what it achieves in the application:
+---------------------------------------------------------
+---------------------------------------------------------
+
+What is `useAuthListener`?
+`useAuthListener` is a custom React hook that manages the authentication state of your user. It listens to Firebase Authentication for any changes in the user's sign-in state (i.e., whether the user is logged in or logged out) and updates your React application accordingly.
+
+How `useAuthListener` Works:
+
+1. Initial User State:
+   - The hook initializes a `user` state using `useState`, which holds the current user's authentication information.
+   - It checks if there is a stored user in `localStorage` (from a previous session) and initializes the `user` state with this value if available.
+
+   
+   const [user, setUser] = useState(JSON.parse(localStorage.getItem('authUser')));
+   
+
+2. Firebase Authentication Listener:
+   - The hook sets up a listener using `auth.onAuthStateChanged`, a Firebase method that triggers a callback function whenever the user's authentication state changes.
+   - If the user signs in, the listener callback receives an `authUser` object, which represents the authenticated user. This user object is stored both in the state and in `localStorage` to persist the user's session across page reloads.
+   - If the user signs out, the listener clears the `authUser` from both state and `localStorage`.
+
+   useEffect(() => {
+     const listener = auth.onAuthStateChanged((authUser) => {
+       if (authUser) {
+         localStorage.setItem('authUser', JSON.stringify(authUser));
+         setUser(authUser);
+       } else {
+         localStorage.removeItem('authUser');
+         setUser(null);
+       }
+     });
+
+     return () => listener(); // Cleanup listener on component unmount
+   }, [auth]);
+
+3. Return Value:
+   - The hook returns the `user` object, which can be used in any component that needs to know whether the user is signed in or not.
+
+   return { user };
+
+Why Use a Custom Hook?
+
+- Encapsulation of Logic: The `useAuthListener` hook encapsulates all the logic related to managing and listening to authentication state changes in one place. This keeps your components clean and focused on rendering UI, without being cluttered with authentication logic.
+  
+- Reusability: By placing the authentication logic in a custom hook, you can easily reuse it across different parts of your application wherever you need to know the user's authentication status.
+
+- Centralized Authentication Handling: Using a hook allows you to centralize how your app deals with authentication state. For instance, if you ever need to change the way you handle authentication, you only need to update the logic in the hook rather than in multiple components.
+
+How It's Used in the Application:
+
+In app.js file, i used the `useAuthListener` hook to determine whether the user is logged in:
+
+const { user } = useAuthListener();
+
+- Routing Based on Authentication: You use the `user` state to conditionally render different routes. For example, if a user is logged in, they should be redirected to the `Browse` page. If not, they should see the `SignIn` or `SignUp` pages:
+
+  <Route
+    path={ROUTES.SIGN_IN}
+    element={!user ? <SignIn /> : <Navigate to={ROUTES.BROWSE} />}
+  />
+
+This makes sure that your application responds dynamically to the user's authentication state, providing a seamless user experience.
+
+The `useAuthListener` hook is designed to monitor and respond to changes in the user's authentication status, ensuring that your React application always knows whether the user is logged in or out and behaves accordingly. It helps manage user sessions by saving the user's state locally and making it accessible across your app.
+
+STEP 11:
+ Creating `useAuthListener` custom hook.

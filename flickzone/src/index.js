@@ -4,15 +4,15 @@ import { App } from './app';
 import 'normalize.css';
 import { GlobalStyles } from './global-styles';
 import { app, db, auth } from './lib/firebase.prod'; // Importing firebase, db, and auth if needed
-import { FirebaseContext } from './context/firebase';
-
+//import { FirebaseContext } from './context/firebase';
+import { FirebaseProvider } from './context/firebase';
 // Pass the firebase, db, or auth objects to your App or other components if necessary
 render(
   <>
-    <FirebaseContext.Provider value={{ app, auth }}>
+    <FirebaseProvider value={{ app, auth }}>
       <GlobalStyles />
       <App />
-    </FirebaseContext.Provider>
+    </FirebaseProvider>
   </>,
   document.getElementById('root')
 );

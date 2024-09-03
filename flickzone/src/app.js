@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Home, Browse, SignIn, SignUp } from './pages';
 import * as ROUTES from './constants/routes';
+import { useAuthListener } from './hooks';
 
 export function App() {
-   const user = null;  // Simulate being logged out
+   const { user } = useAuthListener();  // Simulate being logged out
   //const user = {}; // Replace with your user authentication logic
 
   return (
