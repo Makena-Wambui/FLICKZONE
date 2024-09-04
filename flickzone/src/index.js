@@ -3,17 +3,17 @@ import { render } from 'react-dom';
 import { App } from './app';
 import 'normalize.css';
 import { GlobalStyles } from './global-styles';
-import { app, db, auth } from './lib/firebase.prod'; // Importing firebase, db, and auth if needed
-//import { FirebaseContext } from './context/firebase';
-import { FirebaseProvider } from './context/firebase';
-// Pass the firebase, db, or auth objects to your App or other components if necessary
+import { FirebaseProvider } from './context/firebase'; // Import FirebaseProvider
+
+// Import firebase objects (app, auth, db) from your firebase config
+import { app, db, auth } from './lib/firebase.prod';
+
+// Render the application
 render(
-  <>
-    <FirebaseProvider value={{ app, auth }}>
-      <GlobalStyles />
-      <App />
-    </FirebaseProvider>
-  </>,
+  <FirebaseProvider value={{ app, auth, firestore: db }}> {/* Pass the correct value prop */}
+    <GlobalStyles />
+    <App />
+  </FirebaseProvider>,
   document.getElementById('root')
 );
 

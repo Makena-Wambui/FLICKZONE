@@ -5,6 +5,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { seedDatabase } from '../seed';
+import 'firebase/firestore';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -23,7 +24,7 @@ const db = getFirestore(app);  // Get Firestore instance
 const auth = getAuth(app);  // Get Auth instance
 
 // Seed the database
-// seedDatabase(db); run only once
+// seedDatabase(db); //run only once
 
 export { app, db, auth };
 
