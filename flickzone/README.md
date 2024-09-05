@@ -388,3 +388,6 @@ The `useAuthListener` hook is designed to monitor and respond to changes in the 
 
 STEP 11:
  Creating `useAuthListener` custom hook.
+
+STEP 12:
+	Working on Profiles Component.
