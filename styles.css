@@ -44,6 +44,7 @@ body, html {
 }
 
 .intro {
+  margin-top: 4rem; /* Add margin to account for fixed header */
   padding-top: 4rem; /* Adjust based on header height */
   height: calc(100vh - 4rem); /* Full viewport height minus header height */
   display: flex;
