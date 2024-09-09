@@ -19,9 +19,8 @@ body, html {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0; /* Ensure full width */
   z-index: 1000;
-  /* Added for layout consistency */
-  left: 0;
 }
 
 .navbar {
@@ -46,14 +45,13 @@ body, html {
 
 .intro {
   padding-top: 4rem; /* Adjust based on header height */
-  height: 100vh; /* Full viewport height */
+  height: calc(100vh - 4rem); /* Full viewport height minus header height */
   display: flex;
   align-items: center;
   justify-content: center;
   background: url('assets/cover-image.jpg') no-repeat center center/cover;
   text-align: center;
   position: relative;
-  margin-top: 0; /* Ensure no margin at the top */
 }
 
 .intro-content {
