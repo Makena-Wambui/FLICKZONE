@@ -74,7 +74,7 @@ body, html {
 .project-description {
   font-size: 1.8rem; /* Slightly larger font size */
   margin-top: 0.5rem;
-  color: #ffcccb; /* Light coral color for better contrast */
+  color: #e0b0ff;
   font-weight: 300; /* Lighter font weight */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
   letter-spacing: 0.05rem; /* Slightly increased letter spacing */
