@@ -193,3 +193,43 @@ body, html {
   margin-top: 2rem;
 }
 
+
+.project-video-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #301934; /* Dark purple background for consistency */
+  color: #ffffff; /* White text for better contrast */
+}
+
+.project-video-section h2 {
+  color: #ff4c4c; /* Consistent vibrant red for headings */
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 1.5rem;
+}
+
+.project-video-section video {
+  width: 100%;
+  max-width: 900px; /* Limits the video size */
+  border-radius: 10px; /* Rounded corners for the video */
+  margin-bottom: 1rem;
+}
+
+.project-video-section p {
+  font-size: 1.2rem;
+  color: #cccccc; /* Light grey for readability */
+  margin-bottom: 1rem;
+}
+
+.project-video-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #cccccc; /* Light grey for better contrast */
+  text-align: left;
+  display: inline-block; /* Center aligns the list */
+}
+
+.project-video-section li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem; /* Slightly larger font for readability */
+}
+
