@@ -73,7 +73,7 @@ body, html {
 .project-description {
   font-size: 1.8rem;
   margin-top: 0.5rem;
-  color: #228B22;
+  color: orange;
   font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.05rem;
