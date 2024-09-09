@@ -37,10 +37,13 @@ export function BrowseContainer({ slides }) {
     }
   }, [searchTerm]);
 
-  return profile.displayName ? (
-    <>
-      {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-
+   return profile.displayName ? (
+  <>
+    {loading ? (
+      <Loading src="/images/misc/loading.gif" />
+    ) : (
+      <Loading.ReleaseBody />
+    )}
       <Header src="joker1" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>

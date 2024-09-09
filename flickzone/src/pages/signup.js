@@ -23,7 +23,7 @@ export default function SignUp() {
       .then((result) => {
         return updateProfile(result.user, {
           displayName: firstName,
-          photoURL: Math.floor(Math.random() * 5) + 1,
+	  photoURL: `${process.env.PUBLIC_URL}/images/users/${Math.floor(Math.random() * 5) + 1}.png`,
         });
       })
       .then(() => {

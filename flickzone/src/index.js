@@ -10,10 +10,13 @@ import { app, db, auth } from './lib/firebase.prod';
 
 // Render the application
 render(
-  <FirebaseProvider value={{ app, auth, firestore: db }}> {/* Pass the correct value prop */}
-    <GlobalStyles />
-    <App />
-  </FirebaseProvider>,
+  <React.StrictMode>
+    <FirebaseProvider value={{ app, auth, firestore: db }}> {/* Pass the correct value prop */}
+      <GlobalStyles />
+      <App />
+    </FirebaseProvider>
+  </React.StrictMode>,
+  
   document.getElementById('root')
 );
 

@@ -102,24 +102,6 @@ export async function seedDatabase(db) {
   },
   {
     id: getUUID(),
-    title: "Daniel Tiger's Neighbourhood",
-    description:
-      'Follow the adventures of young Daniel Tiger.',
-    genre: 'children',
-    maturity: '0',
-    slug:"daniel-tiger's-neighbourhood",
-  },
-  {
-    id: getUUID(),
-    title: "Masha And The Bear",
-    description:
-      "A retired circus bear decides to live a quiet life in the forest. However, when Masha, a sprightly young girl, enters the forest, his peaceful life is interrupted.",
-    genre: 'children',
-    maturity: '0',
-    slug:"masha-and-the-bear",
-  },
-  {
-    id: getUUID(),
     title: 'Peppa Pig',
     description:
       'Peppa, an outgoing preschool pig, participates in many energetic activities. She learns something new every day and has a lot of fun with her family and friends.',

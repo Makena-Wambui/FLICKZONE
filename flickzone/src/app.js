@@ -5,9 +5,7 @@ import * as ROUTES from './constants/routes';
 import { useAuthListener } from './hooks';
 
 export function App() {
-   //const { user } = useAuthListener();  // Simulate being logged out
-  const user = {}; // Replace with your user authentication logic
-
+  const { user } = useAuthListener();
   return (
     <Router>
       <Routes>
