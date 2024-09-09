@@ -83,3 +83,31 @@ body {
   background-color: #f40612;
 }
 
+.about-section, .features-section {
+  padding: 2rem;
+  background-color: #1f1f1f;
+  margin-top: 2rem;
+}
+
+.about-section h2, .features-section h2 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+.about-section p, .features-section ul {
+  color: #b3b3b3;
+}
+
+.features-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  color: #b3b3b3;
+  margin-top: 2rem;
+}
+
