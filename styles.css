@@ -10,7 +10,7 @@ body, html {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #ffffff;
-  background-color: #800000;
+  background-color: darkgreen;;
 }
 
 /* Header and Navigation */
@@ -101,7 +101,7 @@ body, html {
 /* About and Features Section */
 .about-section, .features-section {
   padding: 3rem 2rem;
-  background-color: #800000;
+  background-color: darkgreen;
   margin-top: 2rem;
   text-align: center;
 }
@@ -120,7 +120,7 @@ body, html {
 
 .team-section {
   padding: 3rem 2rem;
-  background-color: #800000;
+  background-color: darkgreen;
   margin-top: 2rem;
   text-align: center; /* Center-align content */
 }
@@ -188,7 +188,7 @@ body, html {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #800000;
+  background-color: darkgreen;
   color: #cccccc;
   margin-top: 2rem;
 }
@@ -197,7 +197,7 @@ body, html {
 .project-video-section {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: #800000;
+  background-color: darkgreen;
   color: #ffffff; /* White text for better contrast */
 }
 
