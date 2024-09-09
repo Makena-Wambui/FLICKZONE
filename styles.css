@@ -10,12 +10,16 @@ body {
   line-height: 1.6;
   color: #ffffff;
   background-color: #121212;
-  padding: 20px;
+  padding-top: 60px; /* Adjust this value based on your header height */
 }
 
 .header {
   background-color: #1f1f1f;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -45,12 +49,22 @@ body {
   justify-content: center;
   background-color: #1f1f1f;
   text-align: center;
+  position: relative;
 }
 
 .cover-image {
   width: 100%;
   max-width: 1200px;
   height: auto;
+  max-height: 70vh; /* Adjust this value as needed */
+  object-fit: cover;
+}
+
+.intro-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project-title {
