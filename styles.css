@@ -13,8 +13,9 @@ body, html {
   background-color: #301934; /* Dark purple background */
 }
 
+/* Header and Navigation */
 .header {
-  background-color: #1a1a1a; /* Slightly darker header */
+  background-color: #1a1a1a;
   padding: 1rem;
   position: fixed;
   width: 100%;
@@ -38,53 +39,52 @@ body, html {
 }
 
 .nav-links a {
-  color: #ff4c4c; /* More vibrant red */
+  color: #ff4c4c;
   text-decoration: none;
   font-size: 1.1rem;
 }
 
+/* Intro Section */
 .intro {
-  margin-top: 4rem; /* Adjusts for fixed header */
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 4rem); /* Full viewport height minus header height */
+  height: calc(100vh - 4rem);
 }
 
 .cover-image {
   width: 100%;
-  height: auto;
-  max-height: 70vh; /* Ensure the image doesn't take over the entire viewport */
-  object-fit: cover; /* Makes sure the image scales nicely */
+  max-height: 70vh;
+  object-fit: cover;
 }
 
-/* Intro Content Section */
 .intro-content-section {
-  padding: 4rem 2rem; /* Add some padding around the content */
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .project-title {
-  font-size: 5rem; /* Increased font size */
-  color: #ff4c4c; /* More vibrant red */
+  font-size: 4rem;
+  color: #ff4c4c;
   margin-top: 1rem;
 }
 
 .project-description {
-  font-size: 1.8rem; /* Slightly larger font size */
+  font-size: 1.8rem;
   margin-top: 0.5rem;
   color: #228B22;
-  font-weight: 300; /* Lighter font weight */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
-  letter-spacing: 0.05rem; /* Slightly increased letter spacing */
-  font-family: 'Open Sans', sans-serif; /* Different font */
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .cta-button {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 2rem;
-  background-color: #ff4c4c; /* More vibrant red */
+  background-color: #ff4c4c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -95,85 +95,25 @@ body, html {
 }
 
 .cta-button:hover {
-  background-color: #ff1a1a; /* Slightly darker red on hover */
+  background-color: #ff1a1a;
 }
 
+/* About and Features Section */
 .about-section, .features-section {
-  padding: 2rem;
-  background-color: #301934; /* Dark purple background */
+  padding: 3rem 2rem;
+  background-color: #301934;
   margin-top: 2rem;
 }
 
 .about-section h2, .about-section h3, .features-section h2 {
-  color: #ff4c4c; /* More vibrant red */
-  margin-bottom: 1rem;
+  color: #ff4c4c;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .about-section p, .features-section ul {
-  color: #cccccc; /* Lighter grey for better contrast */
-}
-
-/*.features-section ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}*/
-
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #301934; /* Dark purple background */
-  color: #cccccc; /* Lighter grey for better contrast */
-  margin-top: 2rem;
-}
-
-.features-section {
-  padding: 2rem;
-  background-color: #301934; /* Dark purple background */
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.features-section h2 {
-  color: #ff4c4c; /* More vibrant red */
-  margin-bottom: 1rem;
-  font-size: 3rem; /* Increased font size */
-}
-
-.feature {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.feature-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.feature-title {
-  font-size: 1.6rem;
-  color: #ffcccb; /* Light coral color */
-  margin-bottom: 0.5rem;
-}
-
-.feature-description {
+  color: #cccccc;
   font-size: 1.2rem;
-  color: #cccccc; /* Lighter grey for better contrast */
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.feature-video {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 .team-links {
@@ -182,7 +122,7 @@ body, html {
 }
 
 .team-links li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .team-links a {
@@ -193,5 +133,47 @@ body, html {
 
 .team-links a:hover {
   text-decoration: underline;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+}
+
+.feature {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-image, .feature-video {
+  width: 100%;
+  max-width: 400px; /* Increased max-width for videos */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  color: #ffcccb;
+  margin-bottom: 0.75rem;
+}
+
+.feature-description {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #301934;
+  color: #cccccc;
+  margin-top: 2rem;
 }
 
