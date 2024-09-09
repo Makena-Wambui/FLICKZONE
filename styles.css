@@ -20,6 +20,8 @@ body, html {
   width: 100%;
   top: 0;
   z-index: 1000;
+  /* Added for layout consistency */
+  left: 0;
 }
 
 .navbar {
@@ -43,14 +45,15 @@ body, html {
 }
 
 .intro {
-  height: 100vh;
+  padding-top: 4rem; /* Adjust based on header height */
+  height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
   background: url('assets/cover-image.jpg') no-repeat center center/cover;
   text-align: center;
   position: relative;
-  margin-top: 0;
+  margin-top: 0; /* Ensure no margin at the top */
 }
 
 .intro-content {
