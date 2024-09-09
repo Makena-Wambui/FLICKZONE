@@ -157,13 +157,13 @@ body, html {
 }
 
 .feature-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #ffcccb; /* Light coral color */
   margin-bottom: 0.5rem;
 }
 
 .feature-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #cccccc; /* Lighter grey for better contrast */
   max-width: 600px;
   margin: 0 auto;
