@@ -169,3 +169,11 @@ body, html {
   margin: 0 auto;
 }
 
+.feature-video {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
