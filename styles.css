@@ -1,36 +1,84 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
-header {
-    text-align: center;
-    background-color: #222;
-    color: #fff;
-    padding: 50px 0;
+.header {
+  background-color: #333;
+  padding: 1rem;
 }
 
-section {
-    text-align: center;
-    margin: 50px auto;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.nav-links {
+  list-style-type: none;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: #fff;
+.nav-links li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.cover-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.project-title {
+  font-size: 3rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.project-description {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
 }
 
