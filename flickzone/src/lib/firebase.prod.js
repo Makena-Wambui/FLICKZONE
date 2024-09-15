@@ -1,6 +1,9 @@
-// src/lib/firebase.prod.js
-
 // Firebase v9 modular imports
+// The Firebase v9 modular imports are used to import the Firebase modules.
+// initializeApp is used to initialize the Firebase app.
+// getFirestore is used to get the Firestore instance.
+// getAuth is used to get the Auth instance.
+// seedDatabase is used to seed the database.
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
@@ -8,6 +11,8 @@ import { seedDatabase } from '../seed';
 import 'firebase/firestore';
 
 // Firebase configuration
+// The Firebase configuration is used to configure the Firebase app.
+// The configuration includes the API key, the auth domain, the project ID, the storage bucket, the messaging sender ID, the app ID, and the measurement ID. 
 const firebaseConfig = {
   apiKey: "AIzaSyC6BuJQ_ndA8EJptosaiYuTZTmXBKCXoJg",
   authDomain: "flickzone-7597a.firebaseapp.com",
