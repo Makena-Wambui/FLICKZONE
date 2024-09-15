@@ -1,8 +1,12 @@
 import { collection, doc, writeBatch } from 'firebase/firestore';
 
+// The seedDatabase function is used to seed the Firestore database with the series and films data.
 export async function seedDatabase(db) {
+  // Create a write batch
   const batch = writeBatch(db);
 
+  // Helper function to generate a UUID
+  // returns a random UUID using the format xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
   function getUUID() {
     // eslint gets funny about bitwise
     /* eslint-disable */
@@ -20,7 +24,15 @@ export async function seedDatabase(db) {
     batch.set(docRef, data);
   }
 
-  // Series
+  // Add the series data
+  // The series data is an array of objects with the following properties:
+  // - id: a unique identifier for the series
+  // - title: the title of the series
+  // - description: a brief description of the series
+  // - genre: the genre of the series
+  // - maturity: the maturity rating of the series
+  // - slug: a unique identifier for the series used in the URL
+
   const seriesData = [
     { id: getUUID(), title: 'Tiger King', description: 'An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.', genre: 'documentaries', maturity: '18', slug: 'tiger-king' },
     { id: getUUID(), title: 'Amanda Knox', description: 'Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.',
@@ -237,7 +249,15 @@ export async function seedDatabase(db) {
 
   seriesData.forEach(data => addDocument('series', data));
 
-  // Films
+  // Add the films data
+  // The films data is an array of objects with the following properties:
+  // - id: a unique identifier for the film
+  // - title: the title of the film
+  // - description: a brief description of the film
+  // - genre: the genre of the film
+  // - maturity: the maturity rating of the film
+  // - slug: a unique identifier for the film used in the URL
+
   const filmsData = [
   {
     id: getUUID(),
@@ -489,6 +509,7 @@ export async function seedDatabase(db) {
   }
   ];
 
+  // Add the films data to the batch
   filmsData.forEach(data => addDocument('films', data));
 
   // Commit the batch

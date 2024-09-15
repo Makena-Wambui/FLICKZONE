@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+// The GlobalStyles component is used to set the global styles for the application.
+// These styles are applied to the html and body elements. 
 export const  GlobalStyles = createGlobalStyle`
 	html, body {
 	 height: 100%;
