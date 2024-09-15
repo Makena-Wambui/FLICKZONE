@@ -1,3 +1,4 @@
+// This file is used to export all the components in the components folder
 export { default as Jumbotron } from './jumbotron';
 export { default as Footer } from './footer';
 export { default as Accordion } from './accordion';

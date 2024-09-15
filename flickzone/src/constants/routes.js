@@ -1,4 +1,4 @@
-// routes for our pages
+// These are the routes that are used in the application
 export const HOME = '/';
 export const BROWSE = '/browse';
 export const SIGN_UP = '/signup';
