@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// The Container component is a styled div that serves as the container for the profiles component.
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@ export const Container = styled.div`
   max-width: 80%;
 `;
 
+// The Title component is a styled h1 element that serves as the title for the profiles component. It is used to display the title of the profiles component.
 export const Title = styled.h1`
   width: 100%;
   color: #fff;
@@ -17,6 +19,7 @@ export const Title = styled.h1`
   font-weight: 500;
 `;
 
+// The List component is a styled ul element that serves as the list for the profiles component. It is used to display a list of profiles.
 export const List = styled.ul`
   padding: 0;
   margin: 0;
@@ -24,6 +27,7 @@ export const List = styled.ul`
   flex-direction: row;
 `;
 
+// The Name component is a styled p element that serves as the name for the profiles component. It is used to display the name of a profile.
 export const Name = styled.p`
   color: #808080;
   text-overflow: ellipsis;
@@ -35,6 +39,7 @@ export const Name = styled.p`
   }
 `;
 
+// The Picture component is a styled img element that serves as the picture for the profiles component.
 export const Picture = styled.img`
   width: 100%;
   max-width: 150px;
@@ -43,6 +48,7 @@ export const Picture = styled.img`
   cursor: pointer;
 `;
 
+// The Item component is a styled li element that serves as the item for the profiles component. It is used to display a profile.
 export const Item = styled.li`
   max-height: 200px;
   max-width: 200px;
