@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// Item is the main container for the Jumbotron component 
 export const Item = styled.div`
 	display: flex;
 	border-bottom: 8px solid #222;
@@ -8,6 +9,7 @@ export const Item = styled.div`
 	overflow: hidden;
 `;
 
+// Inner is a container that holds the content of the Jumbotron
 export const Inner = styled.div`
 	// Your normal css here
 	display: flex;
@@ -23,6 +25,7 @@ export const Inner = styled.div`
   }
 `;
 
+// Container is a container that holds the content of the Jumbotron
 export const Container = styled.div`
 	  @media (max-width: 1000px) {
 	  	${Item}:last-of-type h2 {
@@ -31,6 +34,7 @@ export const Container = styled.div`
   }
 `;
 
+// Pane is a container that holds the text content in the Jumbotron
 export const Pane = styled.div`
 	width: 50%;
 	
@@ -41,6 +45,7 @@ export const Pane = styled.div`
 
 	}`;
 
+// Title, SubTitle and Image are used to render the title, subtitle and image in the Jumbotron
 export const Title = styled.h1`
 	font-size: 50px;
 	line-height: 1.1;
