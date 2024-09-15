@@ -10,7 +10,7 @@ FlickZone is a Netflix clone that showcases my skills in web development. This p
 
 - **Final Project Blog Article**: [Read the Article](https://medium.com/@iammakena/i-built-a-netflix-clone-using-react-and-firebase-d94ead9bea2a)
 
-**Author(s) LinkedIn**: [Your LinkedIn Profile]
+- **Linkedin**: [Profile]
 (https://www.linkedin.com/in/alicemakena/)
 
 ### ✨ [Demo](https://youtu.be/4ptDaEW7S8E)
