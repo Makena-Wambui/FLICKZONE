@@ -1,3 +1,5 @@
+// selectionFilter function takes in an array of series and films and returns an object with series and films arrays that are sorted by genre.
+
 export default function selectionFilter({ series, films } = []) {
   return {
     series: [
