@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+// The Container component is a styled div that serves as the container for the player component.
 export const Container = styled.div``;
 
+// The Overlay component is a styled div that serves as the overlay for the player component.
 export const Overlay = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,6 +17,7 @@ export const Overlay = styled.div`
   margin: 0 20px;
 `;
 
+// The Inner component is a styled div that serves as the inner container for the player component.
 export const Inner = styled.div`
   position: relative;
   width: 100%;
@@ -27,6 +30,7 @@ export const Inner = styled.div`
   }
 `;
 
+// The Close component is a styled button that serves as the close button for the player component.
 export const Close = styled.button`
   position: absolute;
   right: 15px;
@@ -61,6 +65,7 @@ export const Close = styled.button`
   }
 `;
 
+// The Button component is a styled button that serves as the button for the player component.
 export const Button = styled.button`
   background-color: #e50914;
   border-color: #ff0a16;
