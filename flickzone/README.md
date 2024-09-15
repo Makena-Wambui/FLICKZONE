@@ -10,8 +10,8 @@ FlickZone is a Netflix clone that showcases my skills in web development. This p
 
 - **Final Project Blog Article**: [Read the Article](https://medium.com/@iammakena/i-built-a-netflix-clone-using-react-and-firebase-d94ead9bea2a)
 
-- **Author's LinkedIn**: [My LinkedIn Profile]
-- (https://www.linkedin.com/in/alicemakena/)
+**Author(s) LinkedIn**: [Your LinkedIn Profile]
+(https://www.linkedin.com/in/alicemakena/)
 
 ### ✨ [Demo](https://youtu.be/4ptDaEW7S8E)
 
@@ -79,15 +79,10 @@ To get a local copy up and running, follow these steps:
    This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
-
 👤 **Alicia Makena**
 
 * Github: [@Makena-Wambui](https://github.com/Makena-Wambui)
-* LinkedIn: [@Alicia Makena](https://linkedin.com/in/Alicia Makena)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
