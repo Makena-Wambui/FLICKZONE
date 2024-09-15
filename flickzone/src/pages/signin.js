@@ -7,14 +7,25 @@ import { FooterContainer } from '../containers/footer';
 import * as ROUTES from '../constants/routes';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
+// The SignIn page is used to display the sign in form.
 export default function SignIn() {
+  // The useNavigate hook is used to navigate to the browse page.
   const navigate = useNavigate();
   const { auth } = useContext(FirebaseContext);
+
+  // The emailAddress and password state variables are used to store the email address and password.
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
+  // The error state variable is used to store the error message.
   const [error, setError] = useState('');
+  // The isInvalid variable is used to check if the email address or password is empty.
   const isInvalid = password === '' || emailAddress === '';
 
+  // The handleSignin function is used to sign in the user.
+  // preventDefault is used to prevent the default form submission behavior.
+  // The signInWithEmailAndPassword function is used to sign in the user with the specified email address and password.
+  // The navigate function is used to navigate to the browse page.
+  // The error state variable is used to store the error message.
   const handleSignin = (event) => {
     event.preventDefault();
 
@@ -66,4 +77,3 @@ export default function SignIn() {
     </>
   );
 }
-

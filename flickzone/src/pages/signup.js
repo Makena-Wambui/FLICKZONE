@@ -7,15 +7,24 @@ import { FooterContainer } from '../containers/footer';
 import * as ROUTES from '../constants/routes';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 
+// The SignUp page is used to display the sign up form.
 export default function SignUp() {
   const navigate = useNavigate();
   const { auth } = useContext(FirebaseContext);
+  // The firstName, emailAddress, and password state variables are used to store the first name, email address, and password.
   const [firstName, setFirstName] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
+  // The error state variable is used to store the error message.
   const [error, setError] = useState('');
+  // The isInvalid variable is used to check if the first name, email address, or password is empty.
   const isInvalid = firstName === '' || password === '' || emailAddress === '';
 
+  // The handleSignUp function is used to sign up the user.
+  // The createUserWithEmailAndPassword function is used to create a new user account with the specified email address and password.
+  // The updateProfile function is used to update the user's profile data.
+  // The navigate function is used to navigate to the browse page. 
+  // The error state variable is used to store the error message. 
   const handleSignUp = (event) => {
     event.preventDefault();
 

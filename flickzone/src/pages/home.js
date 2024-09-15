@@ -5,7 +5,7 @@ import { FooterContainer } from '../containers/footer';
 import { FaqsContainer } from '../containers/faqs';
 import { OptForm, Feature } from '../components';
 
-
+// The Home page is used to display the header, jumbotron, faqs, and footer containers.
 export default function Home() {
   return (
     <>
