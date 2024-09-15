@@ -2,6 +2,8 @@ import React from 'react';
 import jumboData from '../fixtures/jumbo';
 import { Jumbotron } from '../components';
 
+// The JumbotronContainer component is a container that displays the jumbotron.
+// It uses the Jumbotron component to display the jumbotron.
 export function JumbotronContainer() {
   return (
           <Jumbotron.Container>

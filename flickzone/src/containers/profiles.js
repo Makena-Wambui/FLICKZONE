@@ -3,6 +3,8 @@ import { Header, Profiles } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 
+// The SelectProfileContainer component is a container that displays the profile selection page.
+// It uses the Header and Profiles components to display the header and profiles.
 export function SelectProfileContainer({ user, setProfile }) {
   return (
     <>

@@ -3,7 +3,8 @@ import { Accordion } from '../components';
 import faqsData from '../fixtures/faqs';
 import OptForm from '../components/opt-form';
 
-
+// The FaqsContainer component is a container that displays the frequently asked questions.
+// It uses the Accordion component to display the questions and answers.
 export function FaqsContainer() {
   return (
     <Accordion>

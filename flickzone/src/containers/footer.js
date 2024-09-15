@@ -1,6 +1,8 @@
 import React from 'react';
 import { Footer } from '../components';
 
+// The FooterContainer component is a container that displays the footer.
+// It uses the Footer component to display the footer.
 export function FooterContainer() {
   return (
     <Footer>

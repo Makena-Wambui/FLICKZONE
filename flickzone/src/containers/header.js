@@ -3,6 +3,8 @@ import { Header } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 
+// The HeaderContainer component is a container that displays the header.
+// It uses the Header component to display the header.
 export function HeaderContainer({ children }) {
 	return (
 		<Header>

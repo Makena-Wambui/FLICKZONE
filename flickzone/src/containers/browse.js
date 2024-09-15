@@ -1,31 +1,52 @@
 import React, { useState, useEffect, useContext } from 'react';
+
+// The Fuse library is a lightweight fuzzy-search library that allows you to search through a collection of data with a single query.
 import Fuse from 'fuse.js';
 import { Card, Header, Loading, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
+
+// The FirebaseContext is a React context that provides the Firebase instance to the entire application.
 import { FirebaseContext } from '../context/firebase';
 import { SelectProfileContainer } from './profiles';
 import { FooterContainer } from './footer';
 
+// The BrowseContainer component is a container that displays the browse page.
 export function BrowseContainer({ slides }) {
+  // category is a state variable that stores the category of the slide.
   const [category, setCategory] = useState('series');
+  
+  // profile is a state variable that stores the profile of the user.
   const [profile, setProfile] = useState({});
+  
+  // loading is a state variable that stores the loading state of the browse page.
   const [loading, setLoading] = useState(true);
+
+  // searchTerm is a state variable that stores the search term.
   const [searchTerm, setSearchTerm] = useState('');
+  
+  // slideRows is a state variable that stores the slide rows.
   const [slideRows, setSlideRows] = useState([]);
+
+  // The auth property is a Firebase authentication object that provides methods for signing in, signing out, and getting the current user.
   const { auth } = useContext(FirebaseContext);
+
+  // The user property is a Firebase user object that represents the currently authenticated user.
   const user = auth.currentUser || {};
 
+  // The useEffect hook is used to set the loading state to false after 3 seconds. 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
   }, [profile.displayName]);
 
+  // The useEffect hook is used to set the slide rows based on the category.
   useEffect(() => {
     setSlideRows(slides[category]);
   }, [slides, category]);
 
+  // The useEffect hook is used to filter the slide rows based on the search term.
   useEffect(() => {
     const fuse = new Fuse(slideRows, { keys: ['data.description', 'data.title', 'data.genre'] });
     const results = fuse.search(searchTerm).map(({ item }) => item);
@@ -37,6 +58,7 @@ export function BrowseContainer({ slides }) {
     }
   }, [searchTerm]);
 
+  // The BrowseContainer component returns a header, a card group, and a footer container.
    return profile.displayName ? (
   <>
     {loading ? (
