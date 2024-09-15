@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Navigate } from 'react-router-dom';
 
+// checks if the user is logged in and redirects to the browse page 
 export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
   return (
     <Route
@@ -12,7 +13,7 @@ export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
   );
 }
 
-// protects the browse page
+// ProtectedRoute checks if the user is not logged in and redirects to the signin page
 export function ProtectedRoute({ user, children, ...rest }) {
   return (
     <Route
@@ -23,4 +24,3 @@ export function ProtectedRoute({ user, children, ...rest }) {
     />
   );
 }
-
