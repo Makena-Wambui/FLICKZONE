@@ -55,7 +55,7 @@ Here are some screenshots of FlickZone in action:
 ![Home Page](./screenshots/Flickzone_homepage.png)
 
 ### Movie Detail Page
-![Movies](./screenshots/Flickzone_browse1.png)
+![Movies](./screenshots/Flickzone_joker.png)
 ![Browse](./screenshots/Flickzone_browse2.png)
 
 ## Installation
