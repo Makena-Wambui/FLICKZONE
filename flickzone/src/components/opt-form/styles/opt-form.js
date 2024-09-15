@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// This Container component is a styled div element.it is used to wrap the input and button elements. 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -13,6 +14,7 @@ export const Container = styled.div`
   }
 `;
 
+// This Input component is a styled input element. It is used to create a text input field.
 export const Input = styled.input`
   max-width: 450px;
   width: 100%;
@@ -22,11 +24,13 @@ export const Input = styled.input`
   box-sizing: border-box;
 `;
 
+// This Break component is a styled div element. It is used to create a break between the input and button elements.
 export const Break = styled.div`
   flex-basis: 100%;
   height: 0;
 `;
 
+// This Button component is a styled button element. It is used to create a button.
 export const Button = styled.button`
   display: flex;
   align-items: center;
@@ -61,6 +65,7 @@ export const Button = styled.button`
     }
 `;
 
+// This Text component is a styled p element. It is used to create a paragraph.
 export const Text = styled.p`
   font-size: 19.2px;
   color: white;
