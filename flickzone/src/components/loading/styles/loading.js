@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+// LockBody and ReleaseBody are used to lock the body of the page when the user is interacting with the player
 export const LockBody = createGlobalStyle`
   body {
     overflow: hidden;
@@ -12,6 +13,7 @@ export const ReleaseBody = createGlobalStyle`
   }
 `;
 
+// Spinner and Picture are used to render the spinner and the picture of the user 
 export const Spinner = styled.div`
   position: fixed;
   width: 100%;
@@ -74,6 +76,7 @@ export const Spinner = styled.div`
   }
 `;
 
+// Picture is used to render the picture of the user
 export const Picture = styled.img`
   width: 50px;
   height: 50px;
